@@ -14,35 +14,42 @@
   </head>
   <body>
     <div class="container">
-      <h1>World Clock</h1>
-      <img src="time-zone-clocks.jpg" />
-      <form>
-        <label for="city">Find a Time Zone🕐🌍</label>
-        <select class="city" id="city">
-          <option value="" id="choose-option">Choose a City...</option>
-          <option value="#" id="london">London</option>
-          <option value="#" id="paris">Paris</option>
-          <option value="#" id="new-york">New York</option>
-          <option value="#" id="sydney">Sydney</option>
-          <option value="#" id="auckland">Auckland</option>
-        </select>
-        <div class="city-container">
+      <div class="header">
+        <h1>World Clock</h1>
+        <img src="time-zone-clocks.jpg" />
+      </div>
+      <select id="select-city">
+        <option value="" id="choose-option">Choose a City...</option>
+        <option value="#" id="london">London</option>
+        <option value="#" id="paris">Paris</option>
+        <option value="#" id="new-york">New York</option>
+        <option value="#" id="sydney">Sydney</option>
+        <option value="#" id="auckland">Auckland</option>
+      </select>
+      <div class="city-container">
+        <div class="city-date">
           <h2 class="city">Los Angeles</h2>
           <div class="date">Date</div>
-          <div class="time">Time</div>
-          <div class="am-pm">AM</div>
         </div>
-        <div class="city-container">
-          <h2 class="city">Tokyo</h2>
+        <div class="city-time">
+          <div class="time">Time <small>AM</small></div>
+        </div>
+      </div>
+      <div class="city-container">
+        <div class="city-date">
+          <h2 class="city">Paris</h2>
           <div class="date">Date</div>
-          <div class="time">Time</div>
-          <div class="am-pm">AM</div>
         </div>
-      </form>
+        <div class="city-time">
+          <div class="time">Time <small>AM</small></div>
+        </div>
+      </div>
 
       <footer>
         This project was coded by
-        <a target="_blank" href="www.hollyberrywigmore.com">Holly Wigmore💟</a>
+        <a target="_blank" href="https://hollyberrywigmore.com/"
+          >Holly Wigmore💟</a
+        >
         and is open-sourced on
         <a target="_blank" href="https://github.com/Holly-Wigmore">GitHub👩‍💻</a>
       </footer>
