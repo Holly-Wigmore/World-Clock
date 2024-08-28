@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
       rel="stylesheet"
@@ -21,27 +23,26 @@
       <select id="select-city">
         <option value="" id="choose-option">Choose a City...</option>
         <option value="#" id="london">London</option>
-        <option value="#" id="paris">Paris</option>
         <option value="#" id="new-york">New York</option>
         <option value="#" id="sydney">Sydney</option>
         <option value="#" id="auckland">Auckland</option>
       </select>
-      <div class="city-container">
-        <div class="city-date">
+      <div class="city-container" id="los-angeles">
+        <div>
           <h2 class="city">Los Angeles</h2>
-          <div class="date">Date</div>
+          <div class="date"></div>
         </div>
-        <div class="city-time">
-          <div class="time">Time <small>AM</small></div>
+        <div>
+          <div class="time"></div>
         </div>
       </div>
-      <div class="city-container">
-        <div class="city-date">
+      <div class="city-container" id="paris">
+        <div>
           <h2 class="city">Paris</h2>
-          <div class="date">Date</div>
+          <div class="date"></div>
         </div>
-        <div class="city-time">
-          <div class="time">Time <small>AM</small></div>
+        <div>
+          <div class="time"></div>
         </div>
       </div>
 
