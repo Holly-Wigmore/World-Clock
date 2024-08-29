@@ -21,11 +21,12 @@
         <img src="time-zone-clocks.jpg" />
       </div>
       <select id="select-city">
-        <option value="" id="choose-option">Choose a City...</option>
-        <option value="Europe/London" id="london">London</option>
-        <option value="America/New_York" id="new-york">New York</option>
-        <option value="Australia/Sydney" id="sydney">Sydney</option>
-        <option value="Pacific/Auckland" id="auckland">Auckland</option>
+        <option value="">Choose a City...</option>
+        <option value="current">My Location</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="Pacific/Auckland">Auckland</option>
       </select>
       <div id="cities">
         <div class="city-container" id="los-angeles">
@@ -40,6 +41,15 @@
         <div class="city-container" id="paris">
           <div>
             <h2 class="city">Paris</h2>
+            <div class="date"></div>
+          </div>
+          <div>
+            <div class="time"></div>
+          </div>
+        </div>
+        <div class="city-container" id="tokyo">
+          <div>
+            <h2 class="city">Tokyo</h2>
             <div class="date"></div>
           </div>
           <div>

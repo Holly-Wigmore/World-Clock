@@ -17,10 +17,21 @@ function updateTime() {
     parisDate.innerHTML = parisTimeZone.format("MMMM Do YYYY");
     parisTime.innerHTML = parisTimeZone.format("hh:mm:ss [<small>]A[</small>]");
   }
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement) {
+    let tokyoDate = tokyoElement.querySelector(".date");
+    let tokyoTime = tokyoElement.querySelector(".time");
+    let tokyoTimeZone = moment().tz("Asia/Tokyo");
+    tokyoDate.innerHTML = tokyoTimeZone.format("MMMM Do YYYY");
+    tokyoTime.innerHTML = tokyoTimeZone.format("hh:mm:ss [<small>]A[</small>]");
+  }
 }
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
